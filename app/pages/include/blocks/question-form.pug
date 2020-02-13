@@ -1,0 +1,44 @@
+mixin question-form()
+	.question-form.question-form_mod_0.question-form_mod_0.hide(data-question-form)
+		.question-form__btn-close(data-question-form-btn-close)
+			.question-form__btn-close-icon
+			.question-form__btn-close-text Закрыть
+		.question-form__wrap(data-question-form-wrap)
+			.question-form__logo
+				img.question-form__img(src="img/logo.png", alt='')
+			.question-form__content
+				.question-form__top
+					span.question-form__top-text(data-question-form-top-text)
+						| узнай насколько
+						| твой сон здоровый
+				.question-form__center(data-question-form-center)
+					.question-form__inner-wrap(data-question-form-inner-wrap).hide
+						label.question-form-radio__item
+							input.question-form-radio__default(type="radio" name="questions" data-question-form-radio="0")
+							span.question-form-radio__pseudo
+							span.question-form-radio__text Никогда
+						label.question-form-radio__item
+							input.question-form-radio__default(type="radio" name="questions" checked data-question-form-radio="1")
+							span.question-form-radio__pseudo
+							span.question-form-radio__text Редко
+						label.question-form-radio__item
+							input.question-form-radio__default(type="radio" name="questions" data-question-form-radio="2")
+							span.question-form-radio__pseudo
+							span.question-form-radio__text Всегда
+			.question-form__btn-wrap
+				button.question-form__btn(data-question-form-btn="Дальше") Пройти тест
+		.question-form__bottom.hide(data-question-form-bottom)
+			.question-form__bottom-logo
+				img.question-form__bottom-img(src="img/logo_white.png", alt='')
+			.question-form__bottom-text(data-question-form-bottom-text)
+				| у вас
+				| плохой сон
+			.question-form__link-wrap
+				a.question-form__link(href="#" data-question-form-link) Подробнее
+
+
+
+
+
+
+

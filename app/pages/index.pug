@@ -1,0 +1,8 @@
+extend include/template_base
+include include/blocks/question-form
+
+block variables
+	- var title = 'Главная';
+
+block content
+	+question-form()
